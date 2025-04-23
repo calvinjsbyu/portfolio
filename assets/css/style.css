@@ -287,7 +287,12 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.8) 0%, 
+    rgba(255, 255, 255, 0.8) 30%,  /* stays at 0.8 opacity for a while */
+    rgba(255, 255, 255, 0.3) 70%  /* fades to 0.4 opacity */
+  );
   position: absolute;
   bottom: 0;
   top: 0;
